@@ -18,7 +18,7 @@ export default function Home() {
       setTitle(paste.title);
       setContent(paste.content)
     }
-  })
+  },[pasteid,allpastes]);
 
   const createOrUpdatePaste = () => {
     const paste = {
